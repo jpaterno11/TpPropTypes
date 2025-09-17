@@ -1,0 +1,106 @@
+.dashboard {
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  padding: 0;
+}
+
+.dashboard-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.add-order-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-order-btn:hover {
+  background-color: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-main {
+  padding: 32px;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.stats-section {
+  margin-bottom: 32px;
+}
+
+.filters-section {
+  margin-bottom: 24px;
+}
+
+.orders-section {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+/* Responsive design */
+@media (max-width: 1400px) {
+  .dashboard-main {
+    padding: 24px 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 1.5em;
+  }
+  
+  .dashboard-main {
+    padding: 20px 16px;
+    max-width: 100%;
+  }
+  
+  .orders-section {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header h1 {
+    font-size: 1.3em;
+  }
+  
+  .add-order-btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}

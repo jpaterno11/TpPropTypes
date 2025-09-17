@@ -1,0 +1,35 @@
+.order-list {
+  width: 100%;
+}
+
+.order-list-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.order-list-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5em;
+}
+
+.order-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-list-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #bdc3c7;
+}
+
+.order-list-empty p {
+  margin: 0;
+  font-size: 1.1em;
+}
